@@ -1,0 +1,60 @@
+/*header*/
+.header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 25vh;
+  background: $c-blue-gray url('../img/hero-bg.jpg') no-repeat 100% 0%;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  &__info {
+    text-align: center;
+    color: $c-white;
+    max-width: 640px;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    width: 67px;
+    height: 70px;
+    text-indent: -9999px;
+    margin: 0 auto;
+    background: url('../img/logo.svg') 50% 50% no-repeat;
+    background-size: contain;
+  }
+
+  &__title {
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    /*VA=160 in .psd file*/
+    line-height: normal;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    /*VA=160 in .psd file*/
+    line-height: 29px;
+  }
+
+  &__scroll {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 10vh;
+    width: 23px;
+    height: 37px;
+    background: url('../img/scroll.svg') 50% 50% no-repeat;
+    background-size: cover;
+    transition: transform 1s ease;
+    &:hover {
+      transform: translateY(15px);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// wwd
+.wwd {
+  padding: 120px 20px 115px;
+  &__item {
+    padding: 50px 0;
+      &-icon {
+        width: 80px;
+        fill: $c-dark-gray;
+          &--design {
+            height: 83px;
+          }
+          &--dev {
+            height: 76px;
+          }
+          &--pm {
+            height: 91px;
+          }
+      }
+      &-title {
+        margin: 35px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      &-text {
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0;
+      }
+  }
+}
