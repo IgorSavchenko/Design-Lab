@@ -119,10 +119,14 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff; }
+  .works__link:hover .works__image {
+    opacity: 0.8;
+    transform: scale(1.02); }
   .works__image {
     display: block;
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    transition: transform 0.5s ease; }
   .works__title {
     display: block;
     margin: 0;

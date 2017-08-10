@@ -6,8 +6,6 @@
   padding: 0;
   flex-wrap: wrap;
   list-style: none;
-  // justify-content: space-around;
-  // align-content: space-between;
   &__item {
     position: relative;
     &:nth-child(3n+1) {
@@ -26,16 +24,19 @@
     }
   }
   &__link {
-    // display: block;
-    // position: relative;
     text-decoration: none;
     text-transform: uppercase;
     color: $c-white;
+  }
+  &__link:hover &__image {
+    opacity: 0.8;
+    transform: scale(1.02);
   }
   &__image {
     display: block;
     width: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
   }
   &__title {
     display: block;
